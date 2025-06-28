@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poiret+One&family=Press+Start+2P&family=Quicksand:wght@300..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url(../retro/img/download.gif) no-repeat center center fixed;
+  background-size: contain;
+  background-color: #0c0c0c; 
+  color: #fff;
+  font-family: "Press Start 2P", system-ui;
+  padding: 3px 20px 20px 20px;
+}
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: #1a1a1a9a;
+  border-radius: 12px;
+}
+ul {
+  border: solid;
+  text-decoration: none;
+  border-radius: 12px;
+  border-color: #1a1a1ab0;
+  background-color: #1a1a1a9a;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+    padding: 16px;
+}
+.nav-link {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #ff00008a;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: #000004;
+}
+.nav-login {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #ff00008a;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  color: #000004;
+}
+.nav-link:hover {
+  background-color: #ff000036;
+}
+.nav-login:hover {
+  background-color: #ff000036;
+}
+.catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1a1a1a9a;
+  border: #1a1a1a9a;
+  border-radius: 5px;
+  gap: 300px;
+}
+.fundo {
+  background-color: #1a1a1a9a;
+  border: #1a1a1a9a;
+  border-radius: 5px;
+  gap: 0px;
+}
+.titu {
+  background-image: linear-gradient(to bottom, red, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;    
+  text-align: center;
+  padding: 10px;
+}
+.quebra {
+  background-image: linear-gradient(to top, red, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  padding: 6px;
+  font-size: 20px;
+}
+.container-slider {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.container-images {
+  position: relative;
+  width: 700px;
+  height: 400px;
+}
+.slider {
+  opacity: 0;
+  transition: opacity .2s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.slider.on {
+  opacity: 1;
+  z-index: 2;
+}
+.slider:not(.on) {
+  pointer-events: none; 
+}
+.slider.on video {
+  pointer-events: auto;
+}
+#prev-button, #next-button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+#prev-button img, #next-button img {
+  width: 100%;
+  height: 100%;
+}
+#prev-button {
+  transform: rotate(180deg);
+}
+.desc {
+  text-align: center;
+  padding: 27px;
+  background-image: linear-gradient(to top, red, orange, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.download-container {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0;
+}
+.dow {
+  border: solid;
+  border-radius: 12px;
+  border-color: #1a1a1ab0;
+  color: red;
+  background-color: #1a1a1a9a;
+  padding: 16px;
+  width: 150px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+.dow:hover {
+  text-decoration: none;
+  background-color: #2a06648a;
+  transform: scale(1.05);
+}
+.dow p {
+  text-decoration: none;
+  margin: 0;
+}
+.autoral {
+  text-align: center;
+  margin-top: 100px;
+  justify-content: center;
+}
+.soldier {
+  width: 150px;
+}
