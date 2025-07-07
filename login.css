@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* { /*config. geral*/ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { /*corpo do site*/
+    background: url(../retro/img/loginback.gif) no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 3px 20px 20px 20px;
+}
+
+header { /*div. cabeçalho*/
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: #1a1a1a9a;
+    border-radius: 12px;
+}
+
+ul { /*cabeçalho*/
+    font-family: "Press Start 2P", system-ui;
+    border: solid;
+    text-decoration: none;
+    border-radius: 12px;
+    border-color: #1a1a1ab0;
+    background-color: #1a1a1a9a;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+.nav-link { /*botões cabeçalho*/
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #ff00008a;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    color: #000004;
+}
+
+.nav-login { /*botão login*/
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #ff00008a;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    color: #000004;
+}
+
+.nav-link:hover { /*efeito botão*/
+    background-color: #ff000036;
+}
+
+.nav-login:hover { /*efeito botão login*/
+    background-color: #ff000036;
+}
+
+.press { /*titulo login*/
+    font-family: "Press Start 2P", system-ui;
+}
+
+.wrapper { /*layout*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    width: 420px;
+    background: transparent;
+    border: 2px solid #483078;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px black;
+    color: #f2e4f9;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 { /*titulo do layout*/
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box { /*caixa layout*/
+    position: relative;
+    margin: 30px 0;
+    width: 100%;
+    max-width: 350px;
+    margin: 15px 0;
+}
+
+.input-box input { /*caixa do email e senha*/
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 40px;
+    font-size: 16px;
+    color:white;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder { /*efeito caixa do email e senha*/
+    color: white;
+}
+
+.input-box i { /*simbolos*/
+    position: absolute;
+    right: 20px;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot{ /*relembrar e esqueceu a senha*/
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input{ /*relembrar*/
+    accent-color: white;
+    margin-right: 3px;
+}
+
+.remember-forgot a { /*relembrar*/
+    color: white;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover { /*relembrar*/
+   text-decoration: underline; 
+}
+
+.wrapper .btn { /*botão login*/
+    width: 100%;
+    height: 45px;
+    background: #f2e4f9;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+    font-size: 16px;
+    color: gray;
+    font-weight: 600;
+}
+
+.wrapper .register-link { /*botão de registrar*/
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a { /*registrar*/
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover { /*efeito registrar*/
+    text-decoration: underline;
+}

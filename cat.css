@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); /*fonte retro*/
+
+* { /*Config. Geral*/
+    margin: 0;
+    padding: 0;
+}
+body { /*Corpo do site*/
+    background: url(../retro/img/souls-like.gif) no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    font-family: "Press Start 2P", system-ui;
+    padding: 3px 20px 20px 20px;
+    min-height: 100vh;
+}
+
+header { /*Divisão Cabeçalho*/
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: #1a1a1a9a;
+    border-radius: 12px;
+}
+
+ul { /*Personalização Cabeçalho*/
+    border: solid;
+    text-decoration: none;
+    border-radius: 12px;
+    border-color: #1a1a1ab0;
+    background-color: #1a1a1a9a;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+.nav-link { /*Botões Cabeçalho*/
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #ff00008a;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    color: #000004;
+}
+
+.nav-login { /*Botão Login*/
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #ff00008a;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    color: #000004;
+}
+
+.nav-link:hover { /*efeito botão*/
+    background-color: #ff000036;
+}
+
+.nav-login:hover { /*efeito botão login*/
+    background-color: #ff000036;
+}
+.titu {
+  color: #ddb922;
+  text-align: center;
+  padding: 10px;
+}
+.catalogo { /*Agrupamento dos cards*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card { /*Cards dos jogos*/
+    background-color: #1a1a1a9c;
+    border: 3px solid #440b0b;
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 150px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover { /*efeito do card*/
+    display: inline-block;
+    transform: scale(1.05);
+    border-color: #ff000093;
+    background-color: #1a1a1ac5;
+}
+
+.card a { /*ancora do card*/
+    text-decoration: none;
+}
+
+.thumb { /*img do card*/
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.game-title { /*titulo do card*/
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #d8d8d8;
+}
+
+.game-genre { /*genero do card*/
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #b6aeae;
+}
+
+.game-stats { /*avaliação do card*/
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+.stat { /*status*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    color: #bdbdbd;
+}
+
+.stat img { /*img dos status*/
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 3px;
+}
+
+.autoral { /*footer*/
+    text-align: center;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.soldier { /*gif footer*/
+    width: 150px;
+    filter: drop-shadow(0 0 5px red);
+}
